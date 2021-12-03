@@ -1,0 +1,116 @@
+header > div
+{
+	width:100vw;
+	height:100px;
+	background-color:DodgerBlue;
+	grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+	display:grid;
+	position:absolute;
+	border: 2px solid black;
+}
+.link
+{
+	text-decoration:none;
+	color:black;
+}
+header > div h1
+{
+	text-align: center;
+	color:black;
+}
+header > div h1 a:hover
+{
+	color: white;
+	text-decoration:underline;
+}
+footer > div
+{
+	background-color:DodgerBlue;
+	color: black;
+	position: absolute;
+	width: 100vw;
+	border: 2px solid black;
+	bottom:-115vh;
+}
+main
+{
+	position:absolute;
+	top:100px;
+	width:100vw;
+	height:200vh;
+	background-color:DarkGray;
+	grid-template-columns: 1fr 2fr 1fr;
+	display:grid;
+}
+
+main > div
+{
+	text-align:center;
+	border: 2px solid black;
+}
+img
+{
+	width:80%;
+	margin:10px;
+	border:5px solid white;
+}
+@media screen and (max-width: 1000px)
+{
+	main
+	{
+	position:absolute;
+	top:100px;
+	width:100vw;
+	height:400vh;
+	background-color:DarkGray;
+	grid-template-columns: 1fr 2fr;
+	}
+	#none
+	{
+		display:none;
+	}
+	footer > div
+	{
+	background-color:DodgerBlue;
+	color: black;
+	position: absolute;
+	width: 100vw;
+	border: 2px solid black;
+	bottom:-315vh;
+	}
+}
+@media screen and (max-width:615px)
+{
+	header > div
+	{
+	width:100vw;
+	height:160px;
+	background-color:DodgerBlue;
+	grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+	display:grid;
+	position:absolute;
+	border: 2px solid black;
+	}
+	main
+	{
+	position:absolute;
+	top:125px;
+	width:100vw;
+	height:600vh;
+	background-color:DarkGray;
+	grid-template-columns: 1fr 2fr;
+	}
+	#none
+	{
+		display: none;
+	}
+	footer > div
+	{
+	background-color:DodgerBlue;
+	color: black;
+	position: absolute;
+	width: 100vw;
+	border: 2px solid black;
+	bottom:-518vh;
+	}
+}
